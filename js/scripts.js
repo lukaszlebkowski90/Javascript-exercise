@@ -6,14 +6,15 @@
 
 var a = prompt("wpisz liczbe");
 var b = prompt("wpisz liczbe");
+var c = (a * a) + (2 * a * b) - (b * b);
 
-if ((a * a) + (2 * a * b) - (b * b)>0) {
-    alert("Liczba jest dodatnia");
-    console.log("Liczba jest dodatnia");
-} else if ((a * a) + (2 * a * b) - (b * b)<0) {
-    alert("Liczba jest ujemna");
-    console.log("Liczba jest ujemna");
-} else {
-    alert("Wynik = 0");
-    console.log("Wynik = 0");
+    if (c > 0) {
+        alert("Liczba jest dodatnia");
+        console.log("Liczba jest dodatnia");
+}   else if (c < 0) {
+        alert("Liczba jest ujemna");
+        console.log("Liczba jest ujemna");
+}   else {
+        alert("Wynik = 0");
+        console.log("Wynik = 0");
 }
