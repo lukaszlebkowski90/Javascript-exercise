@@ -29,10 +29,10 @@ var allNames = all.concat(femaleNames,maleNames);
 console.log(allNames);
 var newName = "menda";
 	if ( allNames.indexOf(newName)  ===  -1) {
-  	return allNames.push(newName);
+  	  allNames.push(newName);
   } else {
   };
-
+console.log(allNames);
 // Debugging with legacy protocol because Node.js v6.11.0 was detected.
 // node --debug-brk=3605 --nolazy scripts.js 
 // Debugger listening on [::]:3605
