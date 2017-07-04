@@ -33,15 +33,3 @@ var newName = "menda";
   } else {
   };
 console.log(allNames);
-// Debugging with legacy protocol because Node.js v6.11.0 was detected.
-// node --debug-brk=3605 --nolazy scripts.js 
-// Debugger listening on [::]:3605
-// [ 'Mariola',
-//   'Jolasia',
-//   'Halina',
-//   'Helena',
-//   'Ferdek',
-//   'Pazdzioch',
-//   'Waldus',
-//   'Boczek' ]
-
