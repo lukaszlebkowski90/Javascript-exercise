@@ -31,7 +31,7 @@ function setGameElements() {
         resultsElem.style.display = 'block';
       break;
     case 'ended':
-        newGameBtn.innerText = "Chcesz zagrac jeszcze raz?';
+        newGameBtn.innerText = "Chcesz zagrac jeszcze raz?";
       break;
     case 'notStarted':
     default:
