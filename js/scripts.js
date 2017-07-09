@@ -1,17 +1,17 @@
 var newGameBtn = document.getElementById('js-newGameButton');
 var pickRock = document.getElementById('js-playerPick_rock');
-    pickPaper = document.getElementById('js-playerPick_paper');
-    pickScissors = document.getElementById('js-playerPick_scissors');
+var pickPaper = document.getElementById('js-playerPick_paper');
+var pickScissors = document.getElementById('js-playerPick_scissors');
 var playerPointsElem = document.getElementById('js-playerPoints');
-    playerNameElem = document.getElementById('js-playerName');
-    computerPointsElem = document.getElementById('js-computerPoints');
+var playerNameElem = document.getElementById('js-playerName');
+var computerPointsElem = document.getElementById('js-computerPoints');
 var newGameElem = document.getElementById('js-newGameElement');
-    pickElem = document.getElementById('js-playerPickElement');
-    resultsElem = document.getElementById('js-resultsTableElement');
+var pickElem = document.getElementById('js-playerPickElement');
+var resultsElem = document.getElementById('js-resultsTableElement');
 var playerPickElem = document.getElementById('js-playerPick');
-    computerPickElem = document.getElementById('js-computerPick');
-    playerResultElem = document.getElementById('js-playerResult');
-    computerResultElem = document.getElementById('js-computerResult');
+var computerPickElem = document.getElementById('js-computerPick');
+var playerResultElem = document.getElementById('js-playerResult');
+var computerResultElem = document.getElementById('js-computerResult');
 var gameState = 'notStarted',  //started // ended
     player = {
         name: '',
@@ -88,11 +88,9 @@ function checkRoundWinner(playerPick, computerPick) {
 }
 function gameOver() {
     if (computer.score == 2 || player.score == 2) {
-        if (player.score < computer.score)
-            alert("Game over - Computer won !");    
-        else 
-            alert("Game over - Player won !");
+        (player.score < computer.score) ? alert("Game over - Computer won !") : alert("Game over - Player won !");
         gameState = 'ended';
         setGameElements();
     }                    
 }       
+// condition ? expr1 : expr2 
